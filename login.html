@@ -1,0 +1,257 @@
+!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>FitLife</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- modal section -->
+        <div class="bg-modal">
+            <div class="modal-content">
+                <div class="close">X</div>
+                <div class="profile"> FitLife </div>
+                <form method="post" action="homepage.html">
+                    <div class="txt_field">
+                        <label>Email Address:</label>
+                        <input type="text" required id="email_add" placeholder="Enter Email Address" onchange="validateEmail()">
+                    </div>
+                    <br>
+
+                    <div class="txt_field">
+                        <label>Password:</label>
+                        <input type="password" required id="password" placeholder="Enter Password" onchange="validatePassword()">
+                    </div>
+                    <br>
+                    <div class="checkbox">
+                        <input type="checkbox" required>
+                        Remember Me
+                    </div>
+                    <br>
+                    <div class="signupclick">
+                        <label><a href="Signup.html">New User? Click here to sign up</a></label>
+                    </div>
+                    <br>
+                    <div class="button">
+                        <button type="button" class="cancelbtn">
+                            <a href="homepage.html">Cancel</a>
+                        </button>
+                        <button type="submit" class="signupbtn">Log In 
+                            <a href="homepage.html"></a>
+                        </button>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+        </section>
+        
+        <!---header section-->
+        <header class="header ">
+            <a href="#" class="profile">FitLife </a>
+
+            <nav class="navbar active">
+                <a href="#">Home</a>
+                <a href="#">Marketing</a>
+                <a href="#">About</a>
+                <a href="#">Programs</a>
+                <a href="#">Reviews</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+            </nav>
+
+            <a href="#" class="menu-btn"><img src="menu.png"></a>
+            
+            <a href="#" class="registry">Log in</a> 
+        </header>
+        <!----home section---->
+        <section class="home">
+            <div class = "image1"><img src="muscle.png"></div>
+
+            <div class="content">
+                <h3> <span class="line-down">Fastest</span> & Most Efficient Way To Lose Weight</h3>
+
+                <p>Are you unsatisfied with how you look?
+                    Get in shape with minimal effor while powering through
+                    your resposibilites as an adult. </p>
+                <a href="#" class="registry" id="signup">Join us</a>
+
+            </div>
+        </section>
+
+        <!--marketing section-->
+        <section class="marketing">
+
+            <div class="heading">
+                <h1>Why choose us?</h1>
+            </div>
+           
+            <!--box grid -->
+            <div class="container">
+                <div class="box-container">
+
+                    <div class="box">
+                        <img src="no-money.png" class="marketing-images" >
+                        <h3>No payment required</h3>
+                        <p>Every user would have full access
+                           to the website's resources without
+                           having to fork out from their wallets.
+                        </p>
+                    </div>
+                 
+
+                    <div class="box">
+                        <img src="requirement.png"class="marketing-images" >
+                        <h3>Personalised relevant info</h3>
+                        <p>Worry less on what information is relevant
+                           to you and focus more on your journey. 
+                        </p>
+                    </div> 
+
+                    <div class="box">
+                        <img src="tracking-number.png"class ="marketing-images" >
+                        <h3>Progress tracking</h3>
+                        <p>Able to track your progression from day one.
+                           (available after creating an account with us)
+                           *account creation is foc of course
+                        </p>
+
+                    </div>
+
+                    <div class="box">
+                        <img src="nutrition.png"class ="marketing-images" >
+                        <h3>Nutrition</h3>
+                        <p>Stress less by Knowing how much to eat and 
+                            what to eat after another hard day's at work.
+                        </p>
+                        
+                    </div>
+
+                    <div class="box">
+                        <img src="dumbbell.png" class="marketing-images" >
+                        <h3>Personalised training routine</h3>
+                        <p>Have all your workouts and training routines
+                            suggested and planned for you so that you can 
+                            focus more on getting shape than reading up sites.
+                        </p>
+                        
+                    </div>
+
+                    <div class="box">
+                        <img src="healthcare.png"class= >
+                        <h3>Importance of keeping fit</h3>
+                        <p>Learn the most efficient ways to keep fit and stay 
+                            healthy while learning the benefits and the importance
+                            of doing so.
+                        </p>
+                        
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--about section-->
+        <section class="about">
+           <div class="image2"><img src="workout.png" ></div>
+
+           <div class="content">
+            <h3>Who we are</h3>
+            <p>We are 2 students that decided to create a fitness website as our 
+                project idea. With current trends of getting in shape and gyming as a whole
+                taking over social media in all platforms.</p>
+            <p> We've decided to create a online space of our own to share our knowledge 
+                 of fitness with everyone to ensure that anyone with the goal of getting 
+                 in shape would be able to.
+                .</p> 
+            </p>
+           </div>
+            
+        </section>
+
+      <!--programs section-->
+      <section class="programs" id="programs">
+        <div class="heading">
+            <span>our programs</span>
+            <h1>Anything sounds familiar?</h1>
+        </div>
+
+        <div class="about" id="odd">
+            <img src="warming.png" class="program-images" >
+            <div class="content">
+                <h3 class="line-down">Skinny</h3>
+                <p>You look skinny in clothes and in fact so thin
+                   that people around you would call you skeleton or skin-and-bone.
+                   Generally thin and lean, you tend to have slender-waists, narrow hips and
+                   shoulders, small joints, and long legs and arms. As you have high mentabolism,
+                   you burn calories so fast that you don't even notice it. Regardless of what you
+                   eat, you don't gain weight and muscle easily.
+                                    </p>
+                <a href="skinny.html" class="btn" id="odd">read more</a>
+            </div>
+        </div>
+        
+        <div class="about">
+            <img src="exercises.png" class="program-images" >
+            <div class="content">
+                <h3 class="line-down">Skinny-fat</h3>
+                <p>You look thin in clothes but in fact have
+                    more than a pinch full amount of fat that you are 
+                    able to grab. You may appear to be thin or have a Low body weight
+                    , but they relatively have high amount of body fat and Low amount of muscle mass.
+                    People who doesnt exercise frequently or mantains unbalanced diet are at risk of being skinny-fat.
+                </p>
+                <a href="skinny-fat.html" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="about" id="odd">
+            <img src="weights.png" class="program-images" >
+            <div class="content">
+                <h3 class="line-down">Overweight</h3>
+                <p>Also known as obesity or fat, people who are overweight have too much body fat and body mass.
+                   They tend to gain weight easily in your diet, especially when they take carbohydrates and
+                   food high in sugar and fat. Their body mass index (BMI) usually exceeds the healthy range of 25 for
+                   normal people.
+                </p>
+                <a href="overweight.html" class="btn" id="odd">read more</a>
+            </div>
+        </div>
+
+        <div class="about">
+            <img src="weightlifting.png" class="program-images" >
+            <div class="content">
+                <h3 class="line-down">Fit</h3>
+                <p>You are already muscular and healthy. Usually people with this build exercises such as
+                    bodybuilders, contact sports athletes. They are usually characterized by thick arms and legs
+                    and a boxy chest and mid-section. Usually people who have this build would like to achieve their desired
+                    body by getting a leaner physique and developing abs.
+                </p>
+                <a href="fit.html" class="btn">read more</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+        <!--reviews section-->
+        <section class="review">
+            <div class="heading">
+                <span>Client's reviews</span>
+                <h1>user's experience</h1>
+            </div>
+
+            <div class="slide-container">
+
+            </div>
+        </section>
+        <script src= validation.js></script>
+        <script src="script.js"></script>
+        
+       
+        
+    </body>
+</html>
